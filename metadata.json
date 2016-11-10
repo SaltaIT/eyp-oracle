@@ -9,7 +9,9 @@
   "issues_url": "https://github.com/NTTCom-MS/eyp-oracle/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"},
-    {"name":"eyp/eyplib","version_requirement":">= 0.1.0 < 0.2.0"}
+    {"name":"eyp/eyplib","version_requirement":">= 0.1.0 < 0.2.0"},
+    {"name":"eyp/oracledb","version_requirement":">= 0.1.0 < 0.2.0"},
+    {"name":"eyp/oracleclient","version_requirement":">= 0.2.14 < 0.3.0"}
   ],
   "operatingsystem_support": [
     {
@@ -31,10 +33,6 @@
     {
       "operatingsystem": "OracleLinux",
       "operatingsystemrelease": [ "5", "6", "7" ]
-    },
-    {
-      "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [ "14.04" ]
     }
   ],
   "requirements": [

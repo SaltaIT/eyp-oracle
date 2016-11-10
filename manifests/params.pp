@@ -6,8 +6,17 @@ class oracle::params {
     {
       case $::operatingsystemrelease
       {
-        /^[5-7].*$/:
+        /^5.*$/:
         {
+          $package_versiontag='EL5'
+        }
+        /^6.*$/:
+        {
+          $package_versiontag='EL6'
+        }
+        /^7.*$/:
+        {
+          $package_versiontag='el7'
         }
         default: { fail("Unsupported RHEL/CentOS version! - ${::operatingsystemrelease}")  }
       }
