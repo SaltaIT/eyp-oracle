@@ -1,5 +1,5 @@
 define oracle::compat::package(
-                                $version,
+                                $version         = undef,
                                 $packaganame     = $name,
                                 $fullpackagename = undef,
                                 $baseurl         = 'https://oss.oracle.com/projects/compat-oracle/dist/files/Enterprise_Linux',
@@ -19,6 +19,16 @@ define oracle::compat::package(
   else
   {
     $real_package_name="${packaganame}-${version}.${oracle::params::package_versiontag}.${arch}"
+  }
+
+  if($version==undef) and ($fullpackagename==undef)
+  {
+    fail('either version or fullpackagename must be set')
+  }
+
+  if($version==undef) and ($fullpackagename==undef)
+  {
+    fail('incompatible options: version / fullpackagename cannot be set at the same time')
   }
 
   if($ensure=='present')
