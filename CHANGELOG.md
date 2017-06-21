@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.2
+
+* updated dependencies
+
 ## 0.1.1
 
 * added **fullpackagename**
