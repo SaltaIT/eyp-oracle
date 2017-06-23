@@ -2,7 +2,7 @@
   "name": "eyp-oracle",
   "version": "0.1.2",
   "author": "eyp",
-  "summary": null,
+  "summary": "base oracle module",
   "license": "Apache-2.0",
   "source": "https://github.com/NTTCom-MS/eyp-oracle",
   "project_page": null,
